@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Clone</title>
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="screenshot/m.png"/>
+    <style>
+
+        *{
+            font-size: 20px;
+        }
+
+        .status-bar {            
+            width:400px;
+   
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .fa-wifi {
+            position:relative;
+            left:3px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+
+        </div>
+        <div class="status-bar__column">
+            <sapn>18:43</sapn>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcom-header__title"> Welcome to KoKoa Clone</h1>
+        <p class="welcom-header__text">If you have a Kakao Account, long in with your email or phone number.</p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submit" value="Log in"/>        
+        <a href="#">Find Kokoa account or Password</a>
+    </form>
+
+
+     
+    <script src="https://kit.fontawesome.com/f34a9af7f6.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
