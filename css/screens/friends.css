@@ -1,7 +1,8 @@
 .screen-box {
     display: block;
     z-index: 1;
-    position:fixed;
+    position:sticky;
+    top: 0px;
     width:100%;
     background-color:#fff;
 }
@@ -20,10 +21,10 @@
 
 }
 
-
-.friends-box {
-    
+.box,
+.friends-box {    
     padding: 0px var(--horizeontal-space);
+    height:1000px;
 }
 
 #friends-display-link {

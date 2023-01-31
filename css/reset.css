@@ -60,3 +60,7 @@ a {
 .op6{
     opacity: 60%;
 }
+
+.relative {
+	position: relative;
+}

@@ -8,7 +8,10 @@
     padding: 60px 30px 30px var(--horizeontal-space);
 
 }
-
+.screen-header__icon{
+    display: flex;
+    
+}
 .screen-header__title {
     font-size: 32px;
     font-weight: 600;
