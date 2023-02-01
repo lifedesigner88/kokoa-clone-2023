@@ -1,20 +1,3 @@
-.find-icons{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px 40px 20px;
-    border-bottom: var(--main-border);
-}
-
-.find-icon__icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 80%;
-}
-
-.find-icon__icon span {
-    margin-top: 20px;
-}
 
 .recommended-friends {
 
@@ -22,6 +5,7 @@
     width: 100%;
     height: 250px;
     border-bottom: var(--main-border);
+    border-top: var(--main-border);
     font-weight: 600;
     font-size:16px;
 
@@ -51,9 +35,6 @@
     display:flex;
     justify-content: space-between;
 }
-
-
-
 
 .open-chat__content{
 

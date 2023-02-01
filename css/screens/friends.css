@@ -21,11 +21,6 @@
 
 }
 
-.box,
-.friends-box {    
-    padding: 0px var(--horizeontal-space);
-    height:1000px;
-}
 
 #friends-display-link {
     padding: 10px;

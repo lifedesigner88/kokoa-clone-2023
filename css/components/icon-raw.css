@@ -1,0 +1,33 @@
+.icon-raws{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+
+}
+.border-bottom {
+border-bottom: var(--main-border);
+}
+
+.icon-raw__icon {
+
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 80%;
+    margin: 20px 0px 20px 0px;
+}
+
+.icon-raw__icon span {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.3;
+    
+}
+
+.red{
+    color:tomato;
+}
+.font600{
+    font-weight: 600;
+}

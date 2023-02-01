@@ -1,0 +1,21 @@
+.alt-screen-header__title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+} 
+
+.alt-screen-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:40px 30px 20px 30px;
+
+}
+
+.alt-screen-header__icons{
+    width:33.33%;
+}
+
+.alt-screen-header__icons:last-child{
+    text-align: right;
+}

@@ -1,0 +1,49 @@
+
+.chat-screen-header{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+.chat-screen-header__icons {
+    width:33.33%;
+}
+
+
+.chat-screen-header__icons:last-child {
+    display:flex;
+    justify-content: right;
+
+}
+
+.chat-screen-header__title{
+    text-align: center;
+    font-weight: 600;
+} 
+
+
+
+.chat-screen-header__icons h1{
+    font-size: 23px;
+}
+
+.chat-screen-header__icons i {
+    font-size : 29px;
+}
+
+.margin-left20{
+    
+    margin-left: 20px;
+
+}
+.margin-left10{
+    
+    margin-left: 10px;
+
+}

@@ -60,7 +60,23 @@ a {
 .op6{
     opacity: 60%;
 }
+.op8{
+	opacity: 80%;
+}
+
+.hide {
+	visibility: collapse;
+  }
 
 .relative {
 	position: relative;
+}
+
+.box {    
+    padding: 0px var(--horizeontal-space);
+    height:1000px;
+}
+
+.op100{
+    opacity:100% !important;
 }
