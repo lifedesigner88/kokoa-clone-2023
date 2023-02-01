@@ -10,11 +10,11 @@
     <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="screenshot/m.png" />
 </head>
 
-<body>
+<body id="chat-screen">
 
-    <div class="screen-box">
+    <div class="chat-screen-box">
 
-        <div class="status-bar">
+        <div class="chat-status-bar">
             <div class="status-bar__column">
                 <span>No Service</span>
                 <i class="fa-solid fa-wifi"></i>
@@ -42,12 +42,61 @@
             
     </div>
 
-    <main class="box">
+    <main class="box main-chat">
 
- 
+        <div class="chat-timestamp">
+            Tuesday, February 02, 2022 
+        </div>
+
+        <div class="message-row">
+            <img src="https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb8617f9f127ae3ca5dc7f0f6349aebcdb3c4" />
+            <div class="message-row__content">
+                <div class="message__author"> Open AI </div>
+                <div class="message__info">
+                    <sapn class="message__buble">Hi!</sapn>
+                    <sapn class="message__time">20:27</sapn>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-row">
+            <img src="https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb8617f9f127ae3ca5dc7f0f6349aebcdb3c4" />
+            <div class="message-row__content">
+                <div class="message__author"> Open AI </div>
+                <div class="message__info">
+                    <sapn class="message__buble">What are you doing?</sapn>
+                    <sapn class="message__time">20:29</sapn>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__author">  </div>
+                <div class="message__info">
+                    <div class="time-and-not-readed">
+                    <sapn class="message__not-readed">1</sapn>
+                    <sapn class="message__time">21:24</sapn></div>
+                    <sapn class="message__buble--user">What's up?</sapn>
+                </div>
+            </div>
+        </div>
 
     </main>
 
+    <form class="reply">
+        <div class="reply__column">
+            <i class="fa-regular fa-square-plus fa-2x"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message..." />
+            <i class="fa-regular fa-face-smile fa-2x"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up-long fa-2x"></i>
+            </button>
+        </div>
+    </form>
 
 
 
@@ -57,27 +106,7 @@
 
 
 
-        <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn">
-                <a class="nav__link" href="friends.html">
-                    <i class="fa-regular fa-user fa-2x"></i></a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="chats.html">
-                    <span class="notification nav__notification">1</span>
-                    <i class="fa-regular fa-comment fa-2x"></i></a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="find.html">
-                    <i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link " href="more.html">
-                    <i class="fa-solid fa-ellipsis fa-2x"></i></a>
-            </li>
-        </ul>
-    </nav>
+
 
 
     <script src="https://kit.fontawesome.com/f34a9af7f6.js" crossorigin="anonymous"></script>

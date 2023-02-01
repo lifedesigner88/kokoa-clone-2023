@@ -1,11 +1,4 @@
-.screen-box {
-    display: block;
-    z-index: 1;
-    position:sticky;
-    top: 0px;
-    width:100%;
-    background-color:#fff;
-}
+
 
 .friends-screen__channel-header {
     position: relative;
