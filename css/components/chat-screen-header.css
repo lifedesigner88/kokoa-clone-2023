@@ -1,7 +1,9 @@
-
+*{
+    scrollbar-width: none;
+}
 #chat-screen{
     background-color: #abc1d1;
-    height: 1000vh;
+    height: 200vh;
 }
 
 
@@ -72,11 +74,62 @@
 }
 
 
+@keyframes fadeIn {
+    
+    from{
+
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInformleft {
+    
+    from{
+
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+
+}
+
 .main-chat {
     padding-top: 20px;
     display:flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+.chat-timestamp {
+    transform: translateY(-30px);
+    animation: fadeIn 3s cubic-bezier(0.015, 0.210, 0.000, 1.010) forwards;
+}
+
+
+.message-row:nth-child(2) {
+    transform: translateX(-400px);
+    animation: fadeInformleft 1s cubic-bezier(0.015, 0.210, 0.000, 1.010) forwards;
+    animation-delay: 0.2s;
+}
+
+.message-row:nth-child(3) {
+    transform: translateX(-400px);
+    animation: fadeInformleft 1s cubic-bezier(0.015, 0.210, 0.000, 1.010) forwards;
+    animation-delay: 0.5s;
+}
+
+
+.message-row:nth-child(4) {
+    transform: translateX(400px);
+    animation: fadeInformleft 1s cubic-bezier(0.015, 0.210, 0.000, 1.010) forwards;
+    animation-delay: 0.7s;
 }
 
 .message-row {
@@ -154,6 +207,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -172,16 +226,22 @@
 .reply input {
 
     height: 50px;
-    width:95%;
+    width:90%;
     border:var(--main-border);
     border-radius: 15px;
-    padding-left: 15px;
     padding-top: 5px;
-    
+    transition: all 0.3s ease-in-out;    
 }
+
+.reply:focus-within {
+    transform:translateY(70px);
+}   
+
+
 .reply input::placeholder {
     
     font-size: 19px;
+    padding-left: 15px;
 }
 
 .reply .reply__column:last-child button {
@@ -191,8 +251,7 @@
     border-radius: 50%;
     position:absolute;
     width: 45px;
-    height: 45px;
-    
+    height: 45px;    
     right: 16px;
     top: 7px; 
 }
@@ -204,11 +263,34 @@
 
 }
 
-
 .reply .reply__column:last-child > i {
     position:absolute;
     right: 73px;
     top: 13px;
     opacity: 40%;
 }
+
+.reply .reply__column:first-child,
+.reply .fa-face-smile,
+.reply button {
+
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button {
+    
+    opacity: 0 !important;
+
+}
+
+
+.reply input:focus {
+    width: 95vw;
+    transform: translateX(-10%) translateY(-70px);
+    border-radius: 50px;
+}
+
 

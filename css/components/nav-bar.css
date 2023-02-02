@@ -32,18 +32,65 @@
     display: flex;
     justify-content: center;
     align-items:baseline;
+}
+
+.nav__btn i {
+
+transform: translateY(60px);    
+animation: appearBtnAnimation 0.5s ease-in-out forwards;
 
 }
- 
+
+
+@keyframes appearBtnAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+.nav__btn:nth-child(3) i {
+    animation-delay:0.1s;
+}
+.nav__btn:nth-child(2) i {
+    animation-delay:0.2s;
+}
+.nav__btn:nth-child(1) i {
+    animation-delay:0.3s;
+}
+
+
+@keyframes notificationAnimation {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: translateY(-8px) rotateY(180deg);
+    }
+    100%{
+        transform: none;
+
+    }
+}
+
+
 
 .nav__notification {
     position:absolute;    
     left: 15px;
-    top: -10px;
+    top: -7px;
     font-size:16px;
+    animation: notificationAnimation 2s ease-in-out infinite;
  }
 
 
 .bgbold{
     background-color: #dfdfdf;
 }
+
+
+

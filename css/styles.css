@@ -11,6 +11,7 @@
 @import "components/icon-raw.css";
 @import "components/alt-screen-header.css";
 @import "components/chat-screen-header.css";
+@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -23,8 +24,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    height: 150vh;
-    
+    height: 1400px;
+
 }
 
 .welcome-header {

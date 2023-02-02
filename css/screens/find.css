@@ -106,6 +106,26 @@
 #active {
     color:rgb(255, 45, 202);
     margin-left:5px;
-
     
+}
+
+
+@keyframes heartbeat {
+    0%  {
+        font-size: 12px;        
+    }
+    50% {
+        font-size:20px;
+        color: red;
+    }
+    100%{
+        font-size:12px;
+    }
+
+}
+
+
+.open-chat__like-count:hover i{
+    will-change: color;
+    animation: heartbeat 1s ease-in-out infinite;
 }
